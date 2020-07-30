@@ -1,0 +1,36 @@
+
+# |<------ Preferably using up to 50 chars ------>|<------------------->|
+# <tag><group>: <subject> (Max 72 char)
+# --------------------
+# Examples:
+#   feat(core): Implement automated commit messages
+#   fix: Solve the last bug issue
+# --------------------
+# Tag can be:
+#   feat      (new feature)
+#   fix       (bug fix)
+#   refactor  (refactoring code)
+#   style     (formatting, missing semi colons, etc; no code change)
+#   doc       (changes to documentation)
+#   test      (adding or refactoring tests; no production code change)
+#   version   (version bump / new release; no production code change)
+#   script    (changes in scripts; no production code change)
+#   community (edits community rules; no production code change)
+#   hack      (temporary fix to make things move forward; avoid it)
+#   wip       (work in progress; for intermediate commits)
+#
+# (Optional) Group is:
+#   (module name) The name of any repository internal folder that 
+#   represents a module, write the name between parentheses
+#   Examples: (core), (regex), or others
+# --------------------
+# Remember to:
+#   Capitalize the subject line
+#   Use the imperative mood in the subject line
+#   Do not end the subject line with a period
+# --------------------
+# Copyright (c) 2019, Fellipe Augusto Ugliara
+#
+# Use of this source code is governed by an ISC license that can be found 
+# in the LICENSE file at https://github.com/ugliara-fellipe/library.language
+# --------------------
