@@ -5,6 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "token.h"
+#include "inspect.h"
 
 static void _alloc_(token_t *self, args_t arguments) {
   char *type = next_arg(arguments, char *);
@@ -55,7 +56,7 @@ static void _inspect_(token_t *self, inspect_t *inspect) {
   text_from_int(temp, self->index);
   text_append(info, temp->value);
 
-  inspect_value_node(inspect, self, info->value, object_type(self));
+  inspect_value_node(inspect, self, info->value);
   dealloc(temp);
   dealloc(info);
 }

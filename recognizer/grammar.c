@@ -5,6 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "grammar.h"
+#include "inspect.h"
 
 static void _alloc_path_(grammar_path_t *self, args_t arguments) {
   char *rule = next_arg(arguments, char *);

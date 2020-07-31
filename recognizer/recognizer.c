@@ -5,6 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "recognizer.h"
+#include "inspect.h"
 
 static void _alloc_(recognizer_t *self, args_t arguments) {
   self->input = alloc(text_t, "");

@@ -5,8 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "regex.h"
-
-#include <ctype.h>
+#include "inspect.h"
 
 static void _alloc_(regex_t *self, args_t arguments) {
   char *expression = next_arg(arguments, char *);
@@ -29,7 +28,15 @@ static bool _equal_(regex_t *self, regex_t *object) {
   return equal(self->expression, object->expression);
 }
 
-static void _inspect_(regex_t *self, inspect_t *inspect) {}
+static void _inspect_(regex_t *self, inspect_t *inspect) {
+  inspect_value_node(inspect, self, "");
+
+  inspect_add_edge(inspect, self, NULL, self->expression, NULL);
+  inspect_add_edge(inspect, self, NULL, self->fsm, NULL);
+
+  object_inspect(self->expression, inspect);
+  object_inspect(self->fsm, inspect);
+}
 
 def_prototype_source(regex_t, _alloc_, _free_, _copy_, _equal_, _inspect_);
 

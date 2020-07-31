@@ -5,7 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "scanner.h"
-
+#include "inspect.h"
 #include "regex.h"
 #include "token.h"
 

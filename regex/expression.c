@@ -5,6 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "expression.h"
+#include "inspect.h"
 
 static bool expression_str_has_char(const char *str, char c) {
   if (strchr(str, c) != NULL) {
@@ -163,7 +164,26 @@ static bool _equal_(expression_t *self, expression_t *object) {
   return equal(self->value, object->value);
 }
 
-static void _inspect_(expression_t *self, inspect_t *inspect) {}
+static void _inspect_(expression_t *self, inspect_t *inspect) {
+  text_t *info = alloc(text_t, "");
+  text_append(info, self->value->value);
+  text_append(info, "\\n");
+  text_append(info, self->expanded->value);
+  text_append(info, "\\n");
+  text_append(info, self->prefix->value);
+  text_append(info, "\\n");
+
+  index_t index = 0;
+  while (info->value[index] != '\0') {
+    if (info->value[index] == '|') {
+      info->value[index] = '!';
+    }
+    index++;
+  }
+
+  inspect_value_node(inspect, self, info->value);
+  dealloc(info);
+}
 
 def_prototype_source(expression_t, _alloc_, _free_, _copy_, _equal_, _inspect_);
 

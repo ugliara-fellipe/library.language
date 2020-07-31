@@ -5,6 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "parser.h"
+#include "inspect.h"
 #include "number.h"
 #include "token.h"
 

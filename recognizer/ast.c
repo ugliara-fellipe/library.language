@@ -5,6 +5,7 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "ast.h"
+#include "inspect.h"
 
 static void _alloc_path_(ast_path_t *self, args_t arguments) {
   index_t item = next_arg(arguments, int);

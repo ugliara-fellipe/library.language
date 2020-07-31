@@ -6,6 +6,7 @@
 //
 #include "walker.h"
 #include "function.h"
+#include "inspect.h"
 
 static void _alloc_(walker_t *self, args_t arguments) {
   self->listener_enter = alloc(table_t);

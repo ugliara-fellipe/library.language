@@ -5,17 +5,20 @@
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #include "fsm.h"
-
+#include "inspect.h"
 #include "number.h"
 #include "text.h"
 
 static void _alloc_transition_(fsm_transition_t *self, args_t arguments) {
   object_t from = next_arg(arguments, object_t);
   self->from = alloc(pointer_t, from);
+  context_set(self->from, "from");
   object_t symbol = next_arg(arguments, object_t);
   self->symbol = alloc(pointer_t, symbol);
+  context_set(self->symbol, "symbol");
   object_t to = next_arg(arguments, object_t);
   self->to = alloc(pointer_t, to);
+  context_set(self->to, "to");
 }
 
 static void _free_transition_(fsm_transition_t *self) {
@@ -44,7 +47,7 @@ static bool _equal_transition_(fsm_transition_t *self,
 }
 
 static void _inspect_transition_(fsm_transition_t *self, inspect_t *inspect) {
-  inspect_value_node(inspect, self, "", object_type(self));
+  inspect_value_node(inspect, self, "");
 
   inspect_add_edge(inspect, self, NULL, self->from, NULL);
   inspect_add_edge(inspect, self, NULL, self->symbol, NULL);
@@ -94,7 +97,7 @@ static bool _equal_(fsm_t *self, fsm_t *object) {
 }
 
 static void _inspect_(fsm_t *self, inspect_t *inspect) {
-  inspect_value_node(inspect, self, "", object_type(self));
+  inspect_value_node(inspect, self, "");
 
   inspect_add_edge(inspect, self, NULL, self->states, NULL);
   inspect_add_edge(inspect, self, NULL, self->symbols, NULL);
@@ -384,6 +387,11 @@ void fsm_from_expression(fsm_t *self, expression_t *expression) {
   make_terminal(self, end);
   nfa_perform_part(self, expression, 0, begin, end);
   dfa_from_nfa(self);
+
+  context_set(self->states, "states");
+  context_set(self->symbols, "symbols");
+  context_set(self->transitions, "transitions");
+  context_set(self->terminals, "terminals");
 }
 
 void fsm_test() {
