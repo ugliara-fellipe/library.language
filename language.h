@@ -2,7 +2,7 @@
 // Copyright (c) 2021, Fellipe Augusto Ugliara
 //
 // Use of this source code is governed by an ISC license that can be found
-// in the LICENSE file at https://github.com/ugliara-fellipe/library.toolbelt
+// in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
 #ifndef LANGUAGE_H
 #define LANGUAGE_H
