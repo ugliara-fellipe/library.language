@@ -7,11 +7,11 @@
 #ifndef RECOGNIZER_H
 #define RECOGNIZER_H
 
-#include "parser.h"
-#include "prototype.h"
-#include "scanner.h"
-#include "text.h"
-#include "token.h"
+#include "recognizer/parser.h"
+#include "recognizer/scanner.h"
+#include "toolbelt.h"
+
+#include "recognizer/token.h"
 
 typedef struct {
   text_t *input;

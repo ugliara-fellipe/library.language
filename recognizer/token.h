@@ -7,8 +7,7 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 
-#include "prototype.h"
-#include "text.h"
+#include "toolbelt.h"
 
 typedef struct {
   text_t *type;

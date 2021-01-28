@@ -7,9 +7,7 @@
 #ifndef SCANNER_H
 #define SCANNER_H
 
-#include "list.h"
-#include "prototype.h"
-#include "table.h"
+#include "toolbelt.h"
 
 typedef struct {
   table_t *models;

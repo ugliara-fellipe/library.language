@@ -7,9 +7,8 @@
 #ifndef WALKER_H
 #define WALKER_H
 
-#include "ast.h"
-#include "prototype.h"
-#include "table.h"
+#include "recognizer/ast.h"
+#include "toolbelt.h"
 
 typedef void (*listener_t)(ast_item_t *rule, object_t context);
 

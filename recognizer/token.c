@@ -4,8 +4,8 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "token.h"
-#include "inspect.h"
+#include "recognizer/token.h"
+#include "toolbelt.h"
 
 static void _alloc_(token_t *self, args_t arguments) {
   char *type = next_arg(arguments, char *);

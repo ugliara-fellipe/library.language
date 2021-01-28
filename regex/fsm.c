@@ -4,10 +4,8 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "fsm.h"
-#include "inspect.h"
-#include "number.h"
-#include "text.h"
+#include "regex/fsm.h"
+#include "toolbelt.h"
 
 static void _alloc_transition_(fsm_transition_t *self, args_t arguments) {
   object_t from = next_arg(arguments, object_t);

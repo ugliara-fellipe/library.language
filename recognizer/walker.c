@@ -4,9 +4,8 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "walker.h"
-#include "function.h"
-#include "inspect.h"
+#include "recognizer/walker.h"
+#include "toolbelt.h"
 
 static void _alloc_(walker_t *self, args_t arguments) {
   self->listener_enter = alloc(table_t);

@@ -7,11 +7,7 @@
 #ifndef GRAMMAR_H
 #define GRAMMAR_H
 
-#include "list.h"
-#include "pair.h"
-#include "prototype.h"
-#include "table.h"
-#include "text.h"
+#include "toolbelt.h"
 
 typedef struct {
   text_t *rule;

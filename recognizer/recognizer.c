@@ -4,8 +4,8 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "recognizer.h"
-#include "inspect.h"
+#include "recognizer/recognizer.h"
+#include "toolbelt.h"
 
 static void _alloc_(recognizer_t *self, args_t arguments) {
   self->input = alloc(text_t, "");

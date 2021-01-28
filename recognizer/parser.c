@@ -4,10 +4,9 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "parser.h"
-#include "inspect.h"
-#include "number.h"
-#include "token.h"
+#include "recognizer/parser.h"
+#include "recognizer/token.h"
+#include "toolbelt.h"
 
 static void _alloc_context_(parser_context_t *self, args_t arguments) {
   self->grammar_path = alloc(list_t);

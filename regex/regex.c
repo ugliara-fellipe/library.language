@@ -4,8 +4,8 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "regex.h"
-#include "inspect.h"
+#include "regex/regex.h"
+#include "toolbelt.h"
 
 static void _alloc_(regex_t *self, args_t arguments) {
   char *expression = next_arg(arguments, char *);

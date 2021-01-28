@@ -11,6 +11,7 @@
 #
 #   $ sudo apt install clang-format
 #
+clang-format -i *.h
 clang-format -i *.c
 clang-format -i */*.h
 clang-format -i */*.c

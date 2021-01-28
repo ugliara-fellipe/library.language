@@ -4,8 +4,8 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "expression.h"
-#include "inspect.h"
+#include "regex/expression.h"
+#include "toolbelt.h"
 
 static bool expression_str_has_char(const char *str, char c) {
   if (strchr(str, c) != NULL) {

@@ -7,8 +7,7 @@
 #ifndef EXPRESSION_H
 #define EXPRESSION_H
 
-#include "prototype.h"
-#include "text.h"
+#include "toolbelt.h"
 
 typedef struct {
   text_t *value;

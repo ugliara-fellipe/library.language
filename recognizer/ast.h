@@ -7,11 +7,8 @@
 #ifndef AST_H
 #define AST_H
 
-#include "list.h"
-#include "pointer.h"
-#include "prototype.h"
-#include "text.h"
-#include "token.h"
+#include "recognizer/token.h"
+#include "toolbelt.h"
 
 typedef struct {
   index_t item;

@@ -4,10 +4,10 @@
 // Use of this source code is governed by an ISC license that can be found
 // in the LICENSE file at https://github.com/ugliara-fellipe/library.language
 //
-#include "scanner.h"
-#include "inspect.h"
-#include "regex.h"
-#include "token.h"
+#include "recognizer/scanner.h"
+#include "recognizer/token.h"
+#include "regex/regex.h"
+#include "toolbelt.h"
 
 static void _alloc_(scanner_t *self, args_t arguments) {
   self->models = alloc(table_t);

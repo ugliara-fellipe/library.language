@@ -7,9 +7,9 @@
 #ifndef REGEX_H
 #define REGEX_H
 
-#include "expression.h"
-#include "fsm.h"
-#include "prototype.h"
+#include "regex/expression.h"
+#include "regex/fsm.h"
+#include "toolbelt.h"
 
 #define REGEX_INVALID_INDEX SIZE_MAX
 

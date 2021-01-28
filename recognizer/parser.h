@@ -7,10 +7,9 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include "ast.h"
-#include "grammar.h"
-#include "list.h"
-#include "prototype.h"
+#include "recognizer/ast.h"
+#include "recognizer/grammar.h"
+#include "toolbelt.h"
 
 typedef struct {
   list_t *grammar_path;

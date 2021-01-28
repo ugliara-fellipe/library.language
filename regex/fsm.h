@@ -7,10 +7,8 @@
 #ifndef FSM_H
 #define FSM_H
 
-#include "expression.h"
-#include "list.h"
-#include "pointer.h"
-#include "prototype.h"
+#include "regex/expression.h"
+#include "toolbelt.h"
 
 typedef struct {
   pointer_t *from;
