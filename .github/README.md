@@ -4,7 +4,7 @@ Language is a library designed to add support for the implementation of scanners
 and parsers in projects of compilers and interpreters. The modules of the project 
 are: **regex** used to perform regular expressions; and **recognizer** that 
 performs context-free grammars. This project depends on the C11 standard library 
-and Datatype library.
+and Toolbelt library.
 
 ## Build and Format
 
