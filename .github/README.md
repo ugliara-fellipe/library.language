@@ -53,7 +53,7 @@ for details on our code of conduct, and the process for submitting pull requests
 
 ## License
 
-Copyright (c) 2020, Fellipe Augusto Ugliara
+Copyright 2020 Fellipe Augusto Ugliara
 
 Use of this source code is governed by an ISC license that can be found 
 in the LICENSE file at https://github.com/ugliara-fellipe/library.language
