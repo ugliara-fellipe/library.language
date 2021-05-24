@@ -51,9 +51,9 @@ would like to change. Read
 [CONTRIBUTING.md](https://github.com/ugliara-fellipe/library.language/blob/master/.github/CONTRIBUTING.md) 
 for details on our code of conduct, and the process for submitting pull requests.
 
-## License
+## Copyright and License
 
 Copyright 2020 Fellipe Augusto Ugliara
 
-Use of this source code is governed by an ISC license that can be found 
+Use of source codes are governed by an ISC license that can be found 
 in the LICENSE file at https://github.com/ugliara-fellipe/library.language
